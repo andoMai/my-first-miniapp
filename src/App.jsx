@@ -6,16 +6,17 @@ function App() {
   const [name, setName] = useState("");
 
   useEffect(() => {
-    liff
-      .init({
-        liffId: import.meta.env.VITE_LIFF_ID
-      })
-      .then(() => {
-        liff.getProfile()
-          .then((profile) => {
-            setName(profile.displayName);
-          })
-      })
+    // liff
+    //   .init({
+    //     liffId: import.meta.env.VITE_LIFF_ID
+    //   })
+    //   .then(() => {
+    //     liff.getProfile()
+    //       .then((profile) => {
+    //         setName(profile.displayName);
+    //       })
+    //   })
+    setName("LINE ミニアプリ");
   }, []);
   
   return (
