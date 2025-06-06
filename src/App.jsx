@@ -4,6 +4,8 @@ import "./App.css";
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Copyright from "./Copylight";
+import ProTip from "./ProTips";
 
 function App() {
   const [name, setName] = useState("");
@@ -24,16 +26,13 @@ function App() {
   return (
     <div className="App">
       <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI Preact example
+        <Box component="section" sx={{ width: '100%',borderRadius: 3, border: '1px dashed grey' }}> 
           {name && <p>こんにちは、{name}さん</p>}
-        </Typography>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
-  </div>
+          <ProTip />
+          <Copyright />
+        </Box>
+      </Container>
+    </div>
   );
 }
 
