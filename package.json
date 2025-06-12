@@ -44,6 +44,8 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^24.0.1",
+    "@types/react": "^19.1.8",
     "@vitejs/plugin-react": "^4.1.1",
     "jsdom": "^22.1.0",
     "typescript": "^5.8.3",

@@ -17,7 +17,7 @@ function App() {
       })
       .then(() => {
         liff.getProfile()
-          .then((profile) => {
+          .then((profile:any) => {
             setName(profile.displayName);
           })
       })
