@@ -3,7 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 20vmin;
   pointer-events: none;
 }
 
