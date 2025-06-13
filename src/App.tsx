@@ -12,6 +12,7 @@ import ProTip from "./ProTips";
 
 function App() {
   const [name, setName] = useState("");
+  const [image, setImage] = useState("");
 
   useEffect(() => {
     liff
@@ -22,6 +23,7 @@ function App() {
         liff.getProfile()
           .then((profile:any) => {
             setName(profile.displayName);
+            setImage(profile.pictureUrl);
           })
       })
   }, []);
@@ -31,7 +33,7 @@ function App() {
       <Container maxWidth="sm">
         <Grid container direction="row">
           <Grid size={4} p={2}>
-            <img src="Octocat.png" className="App-logo" />
+            <img src={image && {image}} className="App-logo" alt="Profile-img"/>
           </Grid>
           <Grid  size={8}  compontent="section" sx={{alignItems: "center"} }>
             <Stack spacing={2} sx={{width: "150px", margin: "10px auto"}}>
